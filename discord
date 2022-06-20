@@ -101,7 +101,6 @@ function DiscordLib:Window(text)
 	local ServersHolder = Instance.new("Folder")
 	local Userpad = Instance.new("Frame")
 	local UserIcon = Instance.new("Frame")
-	local UserIconCorner = Instance.new("UICorner")
 	local UserImage = Instance.new("ImageLabel")
 	local UserCircleImage = Instance.new("ImageLabel")
 	local UserName = Instance.new("TextLabel")
@@ -209,10 +208,6 @@ function DiscordLib:Window(text)
 	UserIcon.BorderSizePixel = 0
 	UserIcon.Position = UDim2.new(0.0340000018, 0, 0.123999998, 0)
 	UserIcon.Size = UDim2.new(0, 32, 0, 32)
-
-	UserIconCorner.CornerRadius = UDim.new(1, 8)
-	UserIconCorner.Name = "UserIconCorner"
-	UserIconCorner.Parent = UserIcon
 
 	UserImage.Name = "UserImage"
 	UserImage.Parent = UserIcon
@@ -363,38 +358,30 @@ function DiscordLib:Window(text)
 	local Settings = Instance.new("Frame")
 	local SettingsHolder = Instance.new("Frame")
 	local CloseSettingsBtn = Instance.new("TextButton")
-	local CloseSettingsBtnCorner = Instance.new("UICorner")
 	local CloseSettingsBtnCircle = Instance.new("Frame")
-	local CloseSettingsBtnCircleCorner = Instance.new("UICorner")
 	local CloseSettingsBtnIcon = Instance.new("ImageLabel")
 	local TextLabel = Instance.new("TextLabel")
 	local UserPanel = Instance.new("Frame")
 	local UserSettingsPad = Instance.new("Frame")
-	local UserSettingsPadCorner = Instance.new("UICorner")
 	local UsernameText = Instance.new("TextLabel")
 	local UserSettingsPadUserTag = Instance.new("Frame")
 	local UserSettingsPadUser = Instance.new("TextLabel")
 	local UserSettingsPadUserTagLayout = Instance.new("UIListLayout")
 	local UserSettingsPadTag = Instance.new("TextLabel")
 	local EditBtn = Instance.new("TextButton")
-	local EditBtnCorner = Instance.new("UICorner")
 	local UserPanelUserIcon = Instance.new("TextButton")
 	local UserPanelUserImage = Instance.new("ImageLabel")
 	local UserPanelUserCircle = Instance.new("ImageLabel")
 	local BlackFrame = Instance.new("Frame")
-	local BlackFrameCorner = Instance.new("UICorner")
 	local ChangeAvatarText = Instance.new("TextLabel")
 	local SearchIcoFrame = Instance.new("Frame")
-	local SearchIcoFrameCorner = Instance.new("UICorner")
 	local SearchIco = Instance.new("ImageLabel")
 	local UserPanelUserTag = Instance.new("Frame")
 	local UserPanelUser = Instance.new("TextLabel")
 	local UserPanelUserTagLayout = Instance.new("UIListLayout")
 	local UserPanelTag = Instance.new("TextLabel")
-	local UserPanelCorner = Instance.new("UICorner")
 	local LeftFrame = Instance.new("Frame")
 	local MyAccountBtn = Instance.new("TextButton")
-	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
 	local SettingsTitle = Instance.new("TextLabel")
 	local DiscordInfo = Instance.new("TextLabel")
@@ -436,19 +423,11 @@ function DiscordLib:Window(text)
 	CloseSettingsBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 	CloseSettingsBtn.TextSize = 14.000
 
-	CloseSettingsBtnCorner.CornerRadius = UDim.new(1, 0)
-	CloseSettingsBtnCorner.Name = "CloseSettingsBtnCorner"
-	CloseSettingsBtnCorner.Parent = CloseSettingsBtn
-
 	CloseSettingsBtnCircle.Name = "CloseSettingsBtnCircle"
 	CloseSettingsBtnCircle.Parent = CloseSettingsBtn
 	CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 	CloseSettingsBtnCircle.Position = UDim2.new(0.0879999995, 0, 0.118000001, 0)
 	CloseSettingsBtnCircle.Size = UDim2.new(0, 24, 0, 24)
-
-	CloseSettingsBtnCircleCorner.CornerRadius = UDim.new(1, 0)
-	CloseSettingsBtnCircleCorner.Name = "CloseSettingsBtnCircleCorner"
-	CloseSettingsBtnCircleCorner.Parent = CloseSettingsBtnCircle
 
 	CloseSettingsBtnIcon.Name = "CloseSettingsBtnIcon"
 	CloseSettingsBtnIcon.Parent = CloseSettingsBtnCircle
@@ -537,9 +516,6 @@ function DiscordLib:Window(text)
 	UserSettingsPad.Position = UDim2.new(0.0331491716, 0, 0.568140388, 0)
 	UserSettingsPad.Size = UDim2.new(0, 337, 0, 56)
 
-	UserSettingsPadCorner.Name = "UserSettingsPadCorner"
-	UserSettingsPadCorner.Parent = UserSettingsPad
-
 	UsernameText.Name = "UsernameText"
 	UsernameText.Parent = UserSettingsPad
 	UsernameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -614,10 +590,6 @@ function DiscordLib:Window(text)
 		):Play()
 	end)
 
-	EditBtnCorner.CornerRadius = UDim.new(0, 3)
-	EditBtnCorner.Name = "EditBtnCorner"
-	EditBtnCorner.Parent = EditBtn
-
 	UserPanelUserIcon.Name = "UserPanelUserIcon"
 	UserPanelUserIcon.Parent = UserPanel
 	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
@@ -650,10 +622,6 @@ function DiscordLib:Window(text)
 	BlackFrame.Size = UDim2.new(0, 71, 0, 71)
 	BlackFrame.Visible = false
 
-	BlackFrameCorner.CornerRadius = UDim.new(1, 8)
-	BlackFrameCorner.Name = "BlackFrameCorner"
-	BlackFrameCorner.Parent = BlackFrame
-
 	ChangeAvatarText.Name = "ChangeAvatarText"
 	ChangeAvatarText.Parent = BlackFrame
 	ChangeAvatarText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -670,10 +638,6 @@ function DiscordLib:Window(text)
 	SearchIcoFrame.BackgroundColor3 = Color3.fromRGB(222, 222, 222)
 	SearchIcoFrame.Position = UDim2.new(0.657999992, 0, 0, 0)
 	SearchIcoFrame.Size = UDim2.new(0, 20, 0, 20)
-
-	SearchIcoFrameCorner.CornerRadius = UDim.new(1, 8)
-	SearchIcoFrameCorner.Name = "SearchIcoFrameCorner"
-	SearchIcoFrameCorner.Parent = SearchIcoFrame
 
 	SearchIco.Name = "SearchIco"
 	SearchIco.Parent = SearchIcoFrame
@@ -715,26 +679,18 @@ function DiscordLib:Window(text)
 
 
 		local AvatarChange = Instance.new("Frame")
-		local UserChangeCorner = Instance.new("UICorner")
 		local UnderBar = Instance.new("Frame")
-		local UnderBarCorner = Instance.new("UICorner")
 		local UnderBarFrame = Instance.new("Frame")
 		local Text1 = Instance.new("TextLabel")
 		local Text2 = Instance.new("TextLabel")
 		local TextBoxFrame = Instance.new("Frame")
-		local TextBoxFrameCorner = Instance.new("UICorner")
 		local TextBoxFrame1 = Instance.new("Frame")
-		local TextBoxFrame1Corner = Instance.new("UICorner")
 		local AvatarTextbox = Instance.new("TextBox")
 		local ChangeBtn = Instance.new("TextButton")
-		local ChangeCorner = Instance.new("UICorner")
 		local CloseBtn2 = Instance.new("TextButton")
 		local Close2Icon = Instance.new("ImageLabel")
 		local CloseBtn1 = Instance.new("TextButton")
-		local CloseBtn1Corner = Instance.new("UICorner")
 		local ResetBtn = Instance.new("TextButton")
-		local ResetCorner = Instance.new("UICorner")
-
 
 		AvatarChange.Name = "AvatarChange"
 		AvatarChange.Parent = NotificationHolder
@@ -752,20 +708,11 @@ function DiscordLib:Window(text)
 			{BackgroundTransparency = 0}
 		):Play()
 
-
-		UserChangeCorner.CornerRadius = UDim.new(0, 5)
-		UserChangeCorner.Name = "UserChangeCorner"
-		UserChangeCorner.Parent = AvatarChange
-
 		UnderBar.Name = "UnderBar"
 		UnderBar.Parent = AvatarChange
 		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 13)
-
-		UnderBarCorner.CornerRadius = UDim.new(0, 5)
-		UnderBarCorner.Name = "UnderBarCorner"
-		UnderBarCorner.Parent = UnderBar
 
 		UnderBarFrame.Name = "UnderBarFrame"
 		UnderBarFrame.Parent = UnderBar
@@ -803,10 +750,6 @@ function DiscordLib:Window(text)
 		TextBoxFrame.Position = UDim2.new(0.49710983, 0, 0.560606062, 0)
 		TextBoxFrame.Size = UDim2.new(0, 319, 0, 38)
 
-		TextBoxFrameCorner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrameCorner.Name = "TextBoxFrameCorner"
-		TextBoxFrameCorner.Parent = TextBoxFrame
-
 		TextBoxFrame1.Name = "TextBoxFrame1"
 		TextBoxFrame1.Parent = TextBoxFrame
 		TextBoxFrame1.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -814,10 +757,6 @@ function DiscordLib:Window(text)
 		TextBoxFrame1.ClipsDescendants = true
 		TextBoxFrame1.Position = UDim2.new(0.5, 0, 0.5, 0)
 		TextBoxFrame1.Size = UDim2.new(0, 317, 0, 36)
-
-		TextBoxFrame1Corner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrame1Corner.Name = "TextBoxFrame1Corner"
-		TextBoxFrame1Corner.Parent = TextBoxFrame1
 
 		AvatarTextbox.Name = "AvatarTextbox"
 		AvatarTextbox.Parent = TextBoxFrame1
@@ -879,12 +818,6 @@ function DiscordLib:Window(text)
 			NotificationHolder:Destroy()
 		end)
 
-		
-
-		ChangeCorner.CornerRadius = UDim.new(0, 4)
-		ChangeCorner.Name = "ChangeCorner"
-		ChangeCorner.Parent = ChangeBtn
-
 		CloseBtn2.Name = "CloseBtn2"
 		CloseBtn2.Parent = AvatarChange
 		CloseBtn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -915,10 +848,6 @@ function DiscordLib:Window(text)
 		CloseBtn1.Text = "Close"
 		CloseBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn1.TextSize = 13.000
-
-		CloseBtn1Corner.CornerRadius = UDim.new(0, 4)
-		CloseBtn1Corner.Name = "CloseBtn1Corner"
-		CloseBtn1Corner.Parent = CloseBtn1
 
 		ResetBtn.Name = "ResetBtn"
 		ResetBtn.Parent = AvatarChange
@@ -952,10 +881,6 @@ function DiscordLib:Window(text)
 			NotificationHolder:Destroy()
 		end)
 
-		ResetCorner.CornerRadius = UDim.new(0, 4)
-		ResetCorner.Name = "ResetCorner"
-		ResetCorner.Parent = ResetBtn
-		
 		CloseBtn1.MouseButton1Click:Connect(function()
 			AvatarChange:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 			TweenService:Create(
@@ -1060,9 +985,6 @@ function DiscordLib:Window(text)
 	UserPanelTag.TextSize = 17.000
 	UserPanelTag.TextXAlignment = Enum.TextXAlignment.Left
 
-	UserPanelCorner.Name = "UserPanelCorner"
-	UserPanelCorner.Parent = UserPanel
-
 	LeftFrame.Name = "LeftFrame"
 	LeftFrame.Parent = SettingsHolder
 	LeftFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
@@ -1081,10 +1003,6 @@ function DiscordLib:Window(text)
 	MyAccountBtn.Text = ""
 	MyAccountBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 	MyAccountBtn.TextSize = 14.000
-
-	MyAccountBtnCorner.CornerRadius = UDim.new(0, 6)
-	MyAccountBtnCorner.Name = "MyAccountBtnCorner"
-	MyAccountBtnCorner.Parent = MyAccountBtn
 
 	MyAccountBtnTitle.Name = "MyAccountBtnTitle"
 	MyAccountBtnTitle.Parent = MyAccountBtn
@@ -1181,26 +1099,20 @@ function DiscordLib:Window(text)
 		):Play()
 
 		local UserChange = Instance.new("Frame")
-		local UserChangeCorner = Instance.new("UICorner")
 		local UnderBar = Instance.new("Frame")
-		local UnderBarCorner = Instance.new("UICorner")
 		local UnderBarFrame = Instance.new("Frame")
 		local Text1 = Instance.new("TextLabel")
 		local Text2 = Instance.new("TextLabel")
 		local TextBoxFrame = Instance.new("Frame")
-		local TextBoxFrameCorner = Instance.new("UICorner")
 		local TextBoxFrame1 = Instance.new("Frame")
-		local TextBoxFrame1Corner = Instance.new("UICorner")
 		local UsernameTextbox = Instance.new("TextBox")
 		local Seperator = Instance.new("Frame")
 		local HashtagLabel = Instance.new("TextLabel")
 		local TagTextbox = Instance.new("TextBox")
 		local ChangeBtn = Instance.new("TextButton")
-		local ChangeCorner = Instance.new("UICorner")
 		local CloseBtn2 = Instance.new("TextButton")
 		local Close2Icon = Instance.new("ImageLabel")
 		local CloseBtn1 = Instance.new("TextButton")
-		local CloseBtn1Corner = Instance.new("UICorner")
 
 		UserChange.Name = "UserChange"
 		UserChange.Parent = NotificationHolder
@@ -1218,19 +1130,11 @@ function DiscordLib:Window(text)
 			{BackgroundTransparency = 0}
 		):Play()
 		
-		UserChangeCorner.CornerRadius = UDim.new(0, 5)
-		UserChangeCorner.Name = "UserChangeCorner"
-		UserChangeCorner.Parent = UserChange
-
 		UnderBar.Name = "UnderBar"
 		UnderBar.Parent = UserChange
 		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 13)
-
-		UnderBarCorner.CornerRadius = UDim.new(0, 5)
-		UnderBarCorner.Name = "UnderBarCorner"
-		UnderBarCorner.Parent = UnderBar
 
 		UnderBarFrame.Name = "UnderBarFrame"
 		UnderBarFrame.Parent = UnderBar
@@ -1268,20 +1172,12 @@ function DiscordLib:Window(text)
 		TextBoxFrame.Position = UDim2.new(0.49710983, 0, 0.560606062, 0)
 		TextBoxFrame.Size = UDim2.new(0, 319, 0, 38)
 
-		TextBoxFrameCorner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrameCorner.Name = "TextBoxFrameCorner"
-		TextBoxFrameCorner.Parent = TextBoxFrame
-
 		TextBoxFrame1.Name = "TextBoxFrame1"
 		TextBoxFrame1.Parent = TextBoxFrame
 		TextBoxFrame1.AnchorPoint = Vector2.new(0.5, 0.5)
 		TextBoxFrame1.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
 		TextBoxFrame1.Position = UDim2.new(0.5, 0, 0.5, 0)
 		TextBoxFrame1.Size = UDim2.new(0, 317, 0, 36)
-
-		TextBoxFrame1Corner.CornerRadius = UDim.new(0, 3)
-		TextBoxFrame1Corner.Name = "TextBoxFrame1Corner"
-		TextBoxFrame1Corner.Parent = TextBoxFrame1
 
 		UsernameTextbox.Name = "UsernameTextbox"
 		UsernameTextbox.Parent = TextBoxFrame1
@@ -1382,10 +1278,6 @@ function DiscordLib:Window(text)
 			NotificationHolder:Destroy()
 		end)
 
-		ChangeCorner.CornerRadius = UDim.new(0, 4)
-		ChangeCorner.Name = "ChangeCorner"
-		ChangeCorner.Parent = ChangeBtn
-
 		CloseBtn2.Name = "CloseBtn2"
 		CloseBtn2.Parent = UserChange
 		CloseBtn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1417,10 +1309,6 @@ function DiscordLib:Window(text)
 		CloseBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn1.TextSize = 13.000
 
-		CloseBtn1Corner.CornerRadius = UDim.new(0, 4)
-		CloseBtn1Corner.Name = "CloseBtn1Corner"
-		CloseBtn1Corner.Parent = CloseBtn1
-		
 		CloseBtn1.MouseButton1Click:Connect(function()
 			UserChange:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .2, true)
 			TweenService:Create(
@@ -1518,14 +1406,11 @@ function DiscordLib:Window(text)
 	function DiscordLib:Notification(titletext, desctext, btntext)
 		local NotificationHolderMain = Instance.new("TextButton")
 		local Notification = Instance.new("Frame")
-		local NotificationCorner = Instance.new("UICorner")
 		local UnderBar = Instance.new("Frame")
-		local UnderBarCorner = Instance.new("UICorner")
 		local UnderBarFrame = Instance.new("Frame")
 		local Text1 = Instance.new("TextLabel")
 		local Text2 = Instance.new("TextLabel")
 		local AlrightBtn = Instance.new("TextButton")
-		local AlrightCorner = Instance.new("UICorner")
 
 		NotificationHolderMain.Name = "NotificationHolderMain"
 		NotificationHolderMain.Parent = MainFrame
@@ -1563,19 +1448,11 @@ function DiscordLib:Window(text)
 			{BackgroundTransparency = 0}
 		):Play()
 
-		NotificationCorner.CornerRadius = UDim.new(0, 5)
-		NotificationCorner.Name = "NotificationCorner"
-		NotificationCorner.Parent = Notification
-
 		UnderBar.Name = "UnderBar"
 		UnderBar.Parent = Notification
 		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 10)
-
-		UnderBarCorner.CornerRadius = UDim.new(0, 5)
-		UnderBarCorner.Name = "UnderBarCorner"
-		UnderBarCorner.Parent = UnderBar
 
 		UnderBarFrame.Name = "UnderBarFrame"
 		UnderBarFrame.Parent = UnderBar
@@ -1618,10 +1495,6 @@ function DiscordLib:Window(text)
 		AlrightBtn.TextSize = 13.000
 		AlrightBtn.AutoButtonColor = false
 		
-		AlrightCorner.CornerRadius = UDim.new(0, 4)
-		AlrightCorner.Name = "AlrightCorner"
-		AlrightCorner.Parent = AlrightBtn
-		
 		AlrightBtn.MouseButton1Click:Connect(function()
 			TweenService:Create(
 				NotificationHolderMain,
@@ -1662,10 +1535,8 @@ function DiscordLib:Window(text)
 		local fc = false
 		local currentchanneltoggled = ""
 		local Server = Instance.new("TextButton")
-		local ServerBtnCorner = Instance.new("UICorner")
 		local ServerIco = Instance.new("ImageLabel")
 		local ServerWhiteFrame = Instance.new("Frame")
-		local ServerWhiteFrameCorner = Instance.new("UICorner")
 
 		Server.Name = text .. "Server"
 		Server.Parent = ServersHold
@@ -1677,10 +1548,6 @@ function DiscordLib:Window(text)
 		Server.Text = ""
 		Server.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Server.TextSize = 18.000
-
-		ServerBtnCorner.CornerRadius = UDim.new(1, 0)
-		ServerBtnCorner.Name = "ServerCorner"
-		ServerBtnCorner.Parent = Server
 
 		ServerIco.Name = "ServerIco"
 		ServerIco.Parent = Server
@@ -1698,9 +1565,6 @@ function DiscordLib:Window(text)
 		ServerWhiteFrame.Position = UDim2.new(-0.347378343, 0, 0.502659559, 0)
 		ServerWhiteFrame.Size = UDim2.new(0, 11, 0, 10)
 
-		ServerWhiteFrameCorner.CornerRadius = UDim.new(1, 0)
-		ServerWhiteFrameCorner.Name = "ServerWhiteFrameCorner"
-		ServerWhiteFrameCorner.Parent = ServerWhiteFrame
 		ServersHold.CanvasSize = UDim2.new(0, 0, 0, ServersHoldLayout.AbsoluteContentSize.Y)
 
 		local ServerFrame = Instance.new("Frame")
@@ -1711,7 +1575,6 @@ function DiscordLib:Window(text)
 		local GlowFrame = Instance.new("Frame")
 		local Glow = Instance.new("ImageLabel")
 		local ServerContentFrame = Instance.new("Frame")
-		local ServerCorner = Instance.new("UICorner")
 		local ChannelTitleFrame = Instance.new("Frame")
 		local Hashtag = Instance.new("TextLabel")
 		local ChannelTitle = Instance.new("TextLabel")
@@ -1794,10 +1657,6 @@ function DiscordLib:Window(text)
 		ServerContentFrame.BorderSizePixel = 0
 		ServerContentFrame.Position = UDim2.new(-0.0010054264, 0, 0.106338218, 0)
 		ServerContentFrame.Size = UDim2.new(0, 180, 0, 333)
-
-		ServerCorner.CornerRadius = UDim.new(0, 9)
-		ServerCorner.Name = "ServerCorner"
-		ServerCorner.Parent = ServerFrame
 
 		ChannelTitleFrame.Name = "ChannelTitleFrame"
 		ChannelTitleFrame.Parent = ServerFrame
@@ -1891,11 +1750,7 @@ function DiscordLib:Window(text)
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 					):Play()
-					TweenService:Create(
-						ServerBtnCorner,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{CornerRadius = UDim.new(0, 15)}
-					):Play()
+					
 					ServerWhiteFrame:TweenSize(
 						UDim2.new(0, 11, 0, 27),
 						Enum.EasingDirection.Out,
@@ -1915,11 +1770,7 @@ function DiscordLib:Window(text)
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(47, 49, 54)}
 					):Play()
-					TweenService:Create(
-						ServerBtnCorner,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{CornerRadius = UDim.new(1, 0)}
-					):Play()
+					
 					ServerWhiteFrame:TweenSize(
 						UDim2.new(0, 11, 0, 10),
 						Enum.EasingDirection.Out,
@@ -1952,16 +1803,7 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 						):Play()
-						TweenService:Create(
-							v.ServerCorner,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{CornerRadius = UDim.new(1, 0)}
-						):Play()
-						TweenService:Create(
-							ServerBtnCorner,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{CornerRadius = UDim.new(0, 15)}
-						):Play()
+						
 						v.ServerWhiteFrame:TweenSize(
 							UDim2.new(0, 11, 0, 10),
 							Enum.EasingDirection.Out,
@@ -1993,11 +1835,7 @@ function DiscordLib:Window(text)
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 			):Play()
-			TweenService:Create(
-				ServerBtnCorner,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{CornerRadius = UDim.new(0, 15)}
-			):Play()
+			
 			ServerWhiteFrame:TweenSize(
 				UDim2.new(0, 11, 0, 46),
 				Enum.EasingDirection.Out,
@@ -2013,7 +1851,6 @@ function DiscordLib:Window(text)
 		local ChannelHold = {}
 		function ChannelHold:Channel(text)
 			local ChannelBtn = Instance.new("TextButton")
-			local ChannelBtnCorner = Instance.new("UICorner")
 			local ChannelBtnHashtag = Instance.new("TextLabel")
 			local ChannelBtnTitle = Instance.new("TextLabel")
 
@@ -2028,10 +1865,6 @@ function DiscordLib:Window(text)
 			ChannelBtn.Text = ""
 			ChannelBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 			ChannelBtn.TextSize = 14.000
-
-			ChannelBtnCorner.CornerRadius = UDim.new(0, 6)
-			ChannelBtnCorner.Name = "ChannelBtnCorner"
-			ChannelBtnCorner.Parent = ChannelBtn
 
 			ChannelBtnHashtag.Name = "ChannelBtnHashtag"
 			ChannelBtnHashtag.Parent = ChannelBtn
@@ -2127,7 +1960,6 @@ function DiscordLib:Window(text)
 			local ChannelContent = {}
 			function ChannelContent:Button(text,callback)
 				local Button = Instance.new("TextButton")
-				local ButtonCorner = Instance.new("UICorner")
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
@@ -2139,10 +1971,6 @@ function DiscordLib:Window(text)
 				Button.TextSize = 14.000
 				Button.Text = text
 
-				ButtonCorner.CornerRadius = UDim.new(0, 4)
-				ButtonCorner.Name = "ButtonCorner"
-				ButtonCorner.Parent = Button
-				
 				Button.MouseEnter:Connect(function()
 					TweenService:Create(
 						Button,
@@ -2175,9 +2003,7 @@ function DiscordLib:Window(text)
 				local Toggle = Instance.new("TextButton")
 				local ToggleTitle = Instance.new("TextLabel")
 				local ToggleFrame = Instance.new("Frame")
-				local ToggleFrameCorner = Instance.new("UICorner")
 				local ToggleFrameCircle = Instance.new("Frame")
-				local ToggleFrameCircleCorner = Instance.new("UICorner")
 				local Icon = Instance.new("ImageLabel")
 
 				Toggle.Name = "Toggle"
@@ -2210,19 +2036,11 @@ function DiscordLib:Window(text)
 				ToggleFrame.Position = UDim2.new(0.900481343, -5, 0.13300018, 0)
 				ToggleFrame.Size = UDim2.new(0, 40, 0, 21)
 
-				ToggleFrameCorner.CornerRadius = UDim.new(1, 8)
-				ToggleFrameCorner.Name = "ToggleFrameCorner"
-				ToggleFrameCorner.Parent = ToggleFrame
-
 				ToggleFrameCircle.Name = "ToggleFrameCircle"
 				ToggleFrameCircle.Parent = ToggleFrame
 				ToggleFrameCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ToggleFrameCircle.Position = UDim2.new(0.234999999, -5, 0.133000001, 0)
 				ToggleFrameCircle.Size = UDim2.new(0, 15, 0, 15)
-
-				ToggleFrameCircleCorner.CornerRadius = UDim.new(1, 0)
-				ToggleFrameCircleCorner.Name = "ToggleFrameCircleCorner"
-				ToggleFrameCircleCorner.Parent = ToggleFrameCircle
 
 				Icon.Name = "Icon"
 				Icon.Parent = ToggleFrameCircle
@@ -2298,13 +2116,9 @@ function DiscordLib:Window(text)
 				local Slider = Instance.new("TextButton")
 				local SliderTitle = Instance.new("TextLabel")
 				local SliderFrame = Instance.new("Frame")
-				local SliderFrameCorner = Instance.new("UICorner")
 				local CurrentValueFrame = Instance.new("Frame")
-				local CurrentValueFrameCorner = Instance.new("UICorner")
 				local Zip = Instance.new("Frame")
-				local ZipCorner = Instance.new("UICorner")
 				local ValueBubble = Instance.new("Frame")
-				local ValueBubbleCorner = Instance.new("UICorner")
 				local SquareBubble = Instance.new("Frame")
 				local GlowBubble = Instance.new("ImageLabel")
 				local ValueLabel = Instance.new("TextLabel")
@@ -2341,26 +2155,17 @@ function DiscordLib:Window(text)
 				SliderFrame.Position = UDim2.new(0.497999996, 0, 0.757000029, 0)
 				SliderFrame.Size = UDim2.new(0, 385, 0, 8)
 
-				SliderFrameCorner.Name = "SliderFrameCorner"
-				SliderFrameCorner.Parent = SliderFrame
-
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
 				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
-
-				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
-				CurrentValueFrameCorner.Parent = CurrentValueFrame
 
 				Zip.Name = "Zip"
 				Zip.Parent = SliderFrame
 				Zip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Zip.Position = UDim2.new((start or 0)/max, -6,-0.644999981, 0)
 				Zip.Size = UDim2.new(0, 10, 0, 18)
-				ZipCorner.CornerRadius = UDim.new(0, 3)
-				ZipCorner.Name = "ZipCorner"
-				ZipCorner.Parent = Zip
-
+				
 				ValueBubble.Name = "ValueBubble"
 				ValueBubble.Parent = Zip
 				ValueBubble.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2382,11 +2187,6 @@ function DiscordLib:Window(text)
 					end
 				end)
 	
-
-				ValueBubbleCorner.CornerRadius = UDim.new(0, 3)
-				ValueBubbleCorner.Name = "ValueBubbleCorner"
-				ValueBubbleCorner.Parent = ValueBubble
-
 				SquareBubble.Name = "SquareBubble"
 				SquareBubble.Parent = ValueBubble
 				SquareBubble.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2500,9 +2300,7 @@ function DiscordLib:Window(text)
 				local Dropdown = Instance.new("Frame")
 				local DropdownTitle = Instance.new("TextLabel")
 				local DropdownFrameOutline = Instance.new("Frame")
-				local DropdownFrameOutlineCorner = Instance.new("UICorner")
 				local DropdownFrame = Instance.new("Frame")
-				local DropdownFrameCorner = Instance.new("UICorner")
 				local CurrentSelectedText = Instance.new("TextLabel")
 				local ArrowImg = Instance.new("ImageLabel")
 				local DropdownFrameBtn = Instance.new("TextButton")
@@ -2533,10 +2331,6 @@ function DiscordLib:Window(text)
 				DropdownFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
 				DropdownFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
-				DropdownFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameOutlineCorner.Name = "DropdownFrameOutlineCorner"
-				DropdownFrameOutlineCorner.Parent = DropdownFrameOutline
-
 				DropdownFrame.Name = "DropdownFrame"
 				DropdownFrame.Parent = DropdownTitle
 				DropdownFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
@@ -2544,10 +2338,6 @@ function DiscordLib:Window(text)
 				DropdownFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
 				DropdownFrame.Selectable = true
 				DropdownFrame.Size = UDim2.new(0, 392, 0, 32)
-
-				DropdownFrameCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameCorner.Name = "DropdownFrameCorner"
-				DropdownFrameCorner.Parent = DropdownFrame
 
 				CurrentSelectedText.Name = "CurrentSelectedText"
 				CurrentSelectedText.Parent = DropdownFrame
@@ -2581,9 +2371,7 @@ function DiscordLib:Window(text)
 				DropdownFrameBtn.TextSize = 14.000
 
 				local DropdownFrameMainOutline = Instance.new("Frame")
-				local DropdownFrameMainOutlineCorner = Instance.new("UICorner")
 				local DropdownFrameMain = Instance.new("Frame")
-				local DropdownFrameMainCorner = Instance.new("UICorner")
 				local DropItemHolderLabel = Instance.new("TextLabel")
 				local DropItemHolder = Instance.new("ScrollingFrame")
 				local DropItemHolderLayout = Instance.new("UIListLayout")
@@ -2595,10 +2383,6 @@ function DiscordLib:Window(text)
 				DropdownFrameMainOutline.Size = UDim2.new(0, 396, 0, 81)
 				DropdownFrameMainOutline.Visible = false
 
-				DropdownFrameMainOutlineCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameMainOutlineCorner.Name = "DropdownFrameMainOutlineCorner"
-				DropdownFrameMainOutlineCorner.Parent = DropdownFrameMainOutline
-
 				DropdownFrameMain.Name = "DropdownFrameMain"
 				DropdownFrameMain.Parent = DropdownTitle
 				DropdownFrameMain.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
@@ -2607,10 +2391,6 @@ function DiscordLib:Window(text)
 				DropdownFrameMain.Selectable = true
 				DropdownFrameMain.Size = UDim2.new(0, 392, 0, 77)
 				DropdownFrameMain.Visible = false
-
-				DropdownFrameMainCorner.CornerRadius = UDim.new(0, 3)
-				DropdownFrameMainCorner.Name = "DropdownFrameMainCorner"
-				DropdownFrameMainCorner.Parent = DropdownFrameMain
 
 				DropItemHolderLabel.Name = "ItemHolderLabel"
 				DropItemHolderLabel.Parent = DropdownFrameMain
@@ -2670,7 +2450,6 @@ function DiscordLib:Window(text)
 					end
 					
 					local Item = Instance.new("TextButton")
-					local ItemCorner = Instance.new("UICorner")
 					local ItemText = Instance.new("TextLabel")
 
 					Item.Name = "Item"
@@ -2683,10 +2462,6 @@ function DiscordLib:Window(text)
 					Item.TextColor3 = Color3.fromRGB(0, 0, 0)
 					Item.TextSize = 14.000
 					Item.BackgroundTransparency = 1
-
-					ItemCorner.CornerRadius = UDim.new(0, 4)
-					ItemCorner.Name = "ItemCorner"
-					ItemCorner.Parent = Item
 
 					ItemText.Name = "ItemText"
 					ItemText.Parent = Item
@@ -2761,7 +2536,6 @@ function DiscordLib:Window(text)
 					end
 
 					local Item = Instance.new("TextButton")
-					local ItemCorner = Instance.new("UICorner")
 					local ItemText = Instance.new("TextLabel")
 
 					Item.Name = "Item"
@@ -2774,10 +2548,6 @@ function DiscordLib:Window(text)
 					Item.TextColor3 = Color3.fromRGB(0, 0, 0)
 					Item.TextSize = 14.000
 					Item.BackgroundTransparency = 1
-
-					ItemCorner.CornerRadius = UDim.new(0, 4)
-					ItemCorner.Name = "ItemCorner"
-					ItemCorner.Parent = Item
 
 					ItemText.Name = "ItemText"
 					ItemText.Parent = Item
@@ -2833,18 +2603,13 @@ function DiscordLib:Window(text)
 				local Colorpicker = Instance.new("Frame")
 				local ColorpickerTitle = Instance.new("TextLabel")
 				local ColorpickerFrameOutline = Instance.new("Frame")
-				local ColorpickerFrameOutlineCorner = Instance.new("UICorner")
 				local ColorpickerFrame = Instance.new("Frame")
-				local ColorpickerFrameCorner = Instance.new("UICorner")
 				local Color = Instance.new("ImageLabel")
-				local ColorCorner = Instance.new("UICorner")
 				local ColorSelection = Instance.new("ImageLabel")
 				local Hue = Instance.new("ImageLabel")
-				local HueCorner = Instance.new("UICorner")
 				local HueGradient = Instance.new("UIGradient")
 				local HueSelection = Instance.new("ImageLabel")
 				local PresetClr = Instance.new("Frame")
-				local PresetClrCorner = Instance.new("UICorner")
 
 				Colorpicker.Name = "Colorpicker"
 				Colorpicker.Parent = ChannelHolder
@@ -2871,10 +2636,6 @@ function DiscordLib:Window(text)
 				ColorpickerFrameOutline.Position = UDim2.new(-0.00100000005, 0, 0.991999984, 0)
 				ColorpickerFrameOutline.Size = UDim2.new(0, 238, 0, 139)
 
-				ColorpickerFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-				ColorpickerFrameOutlineCorner.Name = "ColorpickerFrameOutlineCorner"
-				ColorpickerFrameOutlineCorner.Parent = ColorpickerFrameOutline
-
 				ColorpickerFrame.Name = "ColorpickerFrame"
 				ColorpickerFrame.Parent = ColorpickerTitle
 				ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
@@ -2883,10 +2644,6 @@ function DiscordLib:Window(text)
 				ColorpickerFrame.Selectable = true
 				ColorpickerFrame.Size = UDim2.new(0, 234, 0, 135)
 
-				ColorpickerFrameCorner.CornerRadius = UDim.new(0, 3)
-				ColorpickerFrameCorner.Name = "ColorpickerFrameCorner"
-				ColorpickerFrameCorner.Parent = ColorpickerFrame
-
 				Color.Name = "Color"
 				Color.Parent = ColorpickerFrame
 				Color.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
@@ -2894,10 +2651,6 @@ function DiscordLib:Window(text)
 				Color.Size = UDim2.new(0, 154, 0, 118)
 				Color.ZIndex = 10
 				Color.Image = "rbxassetid://4155801252"
-
-				ColorCorner.CornerRadius = UDim.new(0, 3)
-				ColorCorner.Name = "ColorCorner"
-				ColorCorner.Parent = Color
 
 				ColorSelection.Name = "ColorSelection"
 				ColorSelection.Parent = Color
@@ -2914,10 +2667,6 @@ function DiscordLib:Window(text)
 				Hue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Hue.Position = UDim2.new(0, 171, 0, 10)
 				Hue.Size = UDim2.new(0, 18, 0, 118)
-
-				HueCorner.CornerRadius = UDim.new(0, 3)
-				HueCorner.Name = "HueCorner"
-				HueCorner.Parent = Hue
 
 				HueGradient.Color = ColorSequence.new {
 					ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)),
@@ -2947,10 +2696,6 @@ function DiscordLib:Window(text)
 				PresetClr.Position = UDim2.new(0.846153855, 0, 0.0740740746, 0)
 				PresetClr.Size = UDim2.new(0, 25, 0, 25)
 
-				PresetClrCorner.CornerRadius = UDim.new(0, 3)
-				PresetClrCorner.Name = "PresetClrCorner"
-				PresetClrCorner.Parent = PresetClr
-				
 				local function UpdateColorPicker(nope)
 					PresetClr.BackgroundColor3 = Color3.fromHSV(ColorH, ColorS, ColorV)
 					Color.BackgroundColor3 = Color3.fromHSV(ColorH, 1, 1)
@@ -3056,9 +2801,7 @@ function DiscordLib:Window(text)
 				local Textbox = Instance.new("Frame")
 				local TextboxTitle = Instance.new("TextLabel")
 				local TextboxFrameOutline = Instance.new("Frame")
-				local TextboxFrameOutlineCorner = Instance.new("UICorner")
 				local TextboxFrame = Instance.new("Frame")
-				local TextboxFrameCorner = Instance.new("UICorner")
 				local TextBox = Instance.new("TextBox")
 
 				Textbox.Name = "Textbox"
@@ -3080,17 +2823,6 @@ function DiscordLib:Window(text)
 				TextboxTitle.TextSize = 14.000
 				TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-				TextboxFrameOutline.Name = "TextboxFrameOutline"
-				TextboxFrameOutline.Parent = TextboxTitle
-				TextboxFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
-				TextboxFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
-				TextboxFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
-				TextboxFrameOutline.Size = UDim2.new(0, 396, 0, 36)
-
-				TextboxFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-				TextboxFrameOutlineCorner.Name = "TextboxFrameOutlineCorner"
-				TextboxFrameOutlineCorner.Parent = TextboxFrameOutline
-
 				TextboxFrame.Name = "TextboxFrame"
 				TextboxFrame.Parent = TextboxTitle
 				TextboxFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
@@ -3098,10 +2830,6 @@ function DiscordLib:Window(text)
 				TextboxFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
 				TextboxFrame.Selectable = true
 				TextboxFrame.Size = UDim2.new(0, 392, 0, 32)
-
-				TextboxFrameCorner.CornerRadius = UDim.new(0, 3)
-				TextboxFrameCorner.Name = "TextboxFrameCorner"
-				TextboxFrameCorner.Parent = TextboxFrame
 
 				TextBox.Parent = TextboxFrame
 				TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
