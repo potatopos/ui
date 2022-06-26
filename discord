@@ -85,7 +85,6 @@ local Discord = Instance.new("ScreenGui")
 Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Discord.ZIndex = 999999999
 
 function DiscordLib:Window(text)
 	local currentservertoggled = ""
@@ -120,6 +119,7 @@ function DiscordLib:Window(text)
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 681, 0, 396)
+	MainFrame.ZIndex = 999999999
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
