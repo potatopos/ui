@@ -126,7 +126,7 @@ function DiscordLib:Window(text)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
-	TopFrame.Size = UDim2.new(0, 681, 0, 22)
+	TopFrame.Size = UDim2.new(0, 340, 0, 22)
 	
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
@@ -134,7 +134,7 @@ function DiscordLib:Window(text)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
-	TopFrameHolder.Size = UDim2.new(0, 681, 0, 22)
+	TopFrameHolder.Size = UDim2.new(0, 340, 0, 22)
 
 	Title.Name = "Title"
 	Title.Parent = TopFrame
@@ -314,7 +314,7 @@ function DiscordLib:Window(text)
 		function()
 			if minimized == false then
 				MainFrame:TweenSize(
-					UDim2.new(0, 681, 0, 22),
+					UDim2.new(0, 340, 0, 22),
 					Enum.EasingDirection.Out,
 					Enum.EasingStyle.Quart,
 					.3,
